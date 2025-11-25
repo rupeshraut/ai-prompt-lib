@@ -8,7 +8,8 @@ This directory contains custom prompts that can be used with GitHub Copilot to g
 |-----------|-----------|-------------|
 | Spring Boot | `.github/prompts/spring-boot/` | Java 17 REST API with JPA, Security, Testing |
 | Project Reactor | `.github/prompts/project-reactor/` | Reactive programming with Spring WebFlux and R2DBC |
-| Apache Flink | `.github/prompts/flink-fednow/` | FedNow payment processing with ISO 20022 |
+| Apache Flink 2.0 | `.github/prompts/flink2.0/` | General-purpose streaming patterns (windows, state, connectors) |
+| Apache Flink FedNow | `.github/prompts/flink-fednow/` | Domain-specific FedNow payment processing with ISO 20022 |
 
 ---
 
@@ -74,9 +75,45 @@ See [project-reactor/README.md](project-reactor/README.md) for detailed document
 
 ---
 
-## Apache Flink Prompts (FedNow)
+## Apache Flink 2.0 Prompts (General-Purpose)
 
-See [flink-fednow/README.md](flink-fednow/README.md) for detailed documentation.
+See [flink2.0/README.md](flink2.0/README.md) for detailed documentation.
+
+### Window & Event-Time Processing
+
+| Template | Description |
+|----------|-------------|
+| `flink2.0/create-window-operations.md` | Tumbling, sliding, session, and count windows with aggregations |
+| `flink2.0/create-event-time-processing.md` | Watermarks, late data handling, event-time semantics |
+
+### Stateful Processing
+
+| Template | Description |
+|----------|-------------|
+| `flink2.0/create-stateful-processing.md` | Keyed state (ValueState, ListState, MapState), broadcast state, TTL |
+
+### Custom Connectors
+
+| Template | Description |
+|----------|-------------|
+| `flink2.0/create-custom-source.md` | Build custom source connectors for non-standard data sources |
+| `flink2.0/create-custom-sink.md` | Build custom sink connectors for external systems |
+| `flink2.0/create-database-sink.md` | JDBC sink with idempotent writes and transaction handling |
+
+### Advanced & Operational Patterns
+
+| Template | Description |
+|----------|-------------|
+| `flink2.0/create-broadcast-state.md` | Share configuration and reference data across all tasks |
+| `flink2.0/create-queryable-state.md` | Expose Flink state via REST API for external queries |
+| `flink2.0/create-monitoring-metrics.md` | Custom metrics, dashboards, and alerting patterns |
+| `flink2.0/create-flink-testing.md` | Unit and integration testing strategies |
+
+---
+
+## Apache Flink Prompts (FedNow - Domain-Specific)
+
+See [flink-fednow/README.md](flink-fednow/README.md) for detailed documentation. This library provides a reference architecture for FedNow payment processing.
 
 | Template | Description |
 |----------|-------------|
