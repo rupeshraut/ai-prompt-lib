@@ -226,7 +226,7 @@ generate unit tests using JUnit 5 and Mockito
 ### Suggestions don't follow the prompt
 - Be more explicit in your request
 - Include more context from the prompt file
-- Try referencing specific sections: "Use the validation section from create-dto.md"
+- Try referencing specific sections: "Use the validation section from spring-boot/create-dto.md"
 
 ### Prompts not working
 - Ensure GitHub Copilot is enabled and active
@@ -238,13 +238,13 @@ generate unit tests using JUnit 5 and Mockito
 
 You can create custom prompts for your specific needs:
 
-1. Create a new `.md` file in `.github/prompts/`
+1. Create a new `.md` file in `.github/prompts/spring-boot/` or `.github/prompts/flink-fednow/` (depending on framework)
 2. Structure your prompt with:
    - Clear requirements
    - Code examples
    - Best practices
    - Common patterns
-3. Reference it using `@workspace #file:.github/prompts/your-prompt.md`
+3. Reference it using `@workspace #file:.github/prompts/spring-boot/your-prompt.md` or `@workspace #file:.github/prompts/flink-fednow/your-prompt.md`
 
 ## Resources
 
