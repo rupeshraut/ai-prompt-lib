@@ -11,6 +11,20 @@ This directory contains custom prompts that can be used with GitHub Copilot to g
 | Apache Flink 2.0 | `.github/prompts/flink2.0/` | General-purpose streaming patterns (windows, state, connectors) |
 | Apache Flink FedNow | `.github/prompts/flink-fednow/` | Domain-specific FedNow payment processing with ISO 20022 |
 
+### Advanced Production Libraries
+
+| Library | Directory | Description |
+|---------|-----------|-------------|
+| Distributed Tracing | `.github/prompts/distributed-tracing/` | OpenTelemetry setup, context propagation, trace sampling |
+| Security & Compliance | `.github/prompts/security-compliance/` | Field encryption, audit logging, GDPR/CCPA/HIPAA compliance, data masking |
+| Resilience & Operations | `.github/prompts/resilience-operations/` | Graceful shutdown, health checks, circuit breakers, rate limiting |
+| Caching & Optimization | `.github/prompts/caching-optimization/` | Distributed caching (Redis + Caffeine), cache invalidation |
+| Data Quality & Validation | `.github/prompts/data-quality-validation/` | Schema validation, idempotency, deduplication |
+| Advanced Testing | `.github/prompts/advanced-testing/` | Contract testing (Pact), chaos engineering |
+| Observability | `.github/prompts/observability/` | Structured logging, metrics & monitoring |
+
+See [ADVANCED_LIBRARIES.md](ADVANCED_LIBRARIES.md) for comprehensive documentation of all 7 advanced libraries with 15+ prompts.
+
 ---
 
 ## Spring Boot Prompts
