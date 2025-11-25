@@ -7,6 +7,7 @@ This directory contains custom prompts that can be used with GitHub Copilot to g
 | Framework | Directory | Description |
 |-----------|-----------|-------------|
 | Spring Boot | `.github/prompts/spring-boot/` | Java 17 REST API with JPA, Security, Testing |
+| Project Reactor | `.github/prompts/project-reactor/` | Reactive programming with Spring WebFlux and R2DBC |
 | Apache Flink | `.github/prompts/flink-fednow/` | FedNow payment processing with ISO 20022 |
 
 ---
@@ -39,6 +40,37 @@ See [spring-boot/README.md](spring-boot/README.md) for detailed documentation.
 |----------|-------------|
 | `spring-boot/create-security-config.md` | Complete JWT authentication setup (SecurityConfig, JwtTokenProvider, filters, AuthController) |
 | `spring-boot/create-migration.md` | Database migrations with Flyway or Liquibase |
+
+---
+
+## Project Reactor Prompts
+
+See [project-reactor/README.md](project-reactor/README.md) for detailed documentation.
+
+### Core Reactive Types
+
+| Template | Description |
+|----------|-------------|
+| `project-reactor/create-mono-handler.md` | Single-value async operations with Mono |
+| `project-reactor/create-flux-processor.md` | Multi-value stream processing with Flux |
+
+### Reactive Application Layers
+
+| Template | Description |
+|----------|-------------|
+| `project-reactor/create-reactive-service.md` | Business logic services using reactive patterns |
+| `project-reactor/create-reactive-controller.md` | Spring WebFlux REST endpoints with reactive returns |
+| `project-reactor/create-webflux-client.md` | Non-blocking HTTP clients using WebClient |
+| `project-reactor/create-reactive-repository.md` | Spring Data R2DBC repositories for reactive database access |
+
+### Advanced Reactive Patterns
+
+| Template | Description |
+|----------|-------------|
+| `project-reactor/create-backpressure-handler.md` | Handling backpressure, buffering, and flow control |
+| `project-reactor/create-error-handling.md` | Error recovery, retry logic, and exception handling |
+| `project-reactor/create-scheduler-config.md` | Thread scheduling and execution context configuration |
+| `project-reactor/create-reactive-test.md` | Unit and integration tests using StepVerifier and virtual time |
 
 ---
 
